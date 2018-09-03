@@ -8,8 +8,11 @@
 */
 
 function LongestWord(sen) {
-  // code goes here
-  return sen;
+  const arrSen = sen.split(' ')
+
+  return arrSen
+    .map((str) => str.replace(/[^a-zA-Z0-9]+/g, ''))
+    .reduce((curr, next) => curr.length >= next.length ? curr : next) // prettier-ignore
 }
 
-LongestWord("Argument goes here");
+LongestWord('fun&!! times')

@@ -3,8 +3,10 @@
 // For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
 
 function FirstReverse(str) {
-  // code goes here
   return str
+    .split('')
+    .reverse()
+    .join('')
 }
 
 // Do not change code below this line.

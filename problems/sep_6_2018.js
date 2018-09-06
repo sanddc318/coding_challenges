@@ -4,9 +4,9 @@
 
 // For the test cases, the parameter num will be any number from 1 to 1000.
 
-function simpleAdding() {
-  // code goes here.
+function simpleAdding(num) {
+  return num > 0 ? num + simpleAdding(num - 1) : 0
 }
 
 // Do not change code below this line.
-simpleAdding(10)
+simpleAdding(4)
